@@ -1,1 +1,100 @@
 
+import { Recycle, Sun, FileText, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
+
+const services = [
+  {
+    id: 1,
+    icon: Recycle,
+    title: 'Recycling Services',
+    description: 'Comprehensive waste management and recycling programs tailored to your business needs.',
+    features: [
+      'Commercial recycling programs',
+      'Waste audit and analysis',
+      'Customized collection schedules',
+      'Recycling training for staff',
+    ],
+  },
+  {
+    id: 2,
+    icon: Sun,
+    title: 'Solar Energy Solutions',
+    description: 'Professional solar panel installation and maintenance services for homes and businesses.',
+    features: [
+      'Solar panel installation',
+      'System design and engineering',
+      'Maintenance and monitoring',
+      'Grid-tied and off-grid systems',
+    ],
+  },
+  {
+    id: 3,
+    icon: FileText,
+    title: 'Energy Audits',
+    description: 'Detailed energy assessments to identify savings opportunities and improve efficiency.',
+    features: [
+      'Comprehensive energy analysis',
+      'Cost-benefit recommendations',
+      'Implementation support',
+      'ROI tracking and reporting',
+    ],
+  },
+];
+
+export function Services() {
+  const [expandedService, setExpandedService] = useState<number | null>(null);
+
+  return (
+    <section id="services" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <p className="text-gray-600 text-lg">
+            We offer a range of eco-friendly services to help you live a greener life.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service) => {
+            const Icon = service.icon;
+            const isExpanded = expandedService === service.id;
+            
+            return (
+              <div key={service.id} className="bg-white p-8 rounded-lg hover:shadow-xl transition-shadow">
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+                    <Icon className="w-10 h-10 text-green-600" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">{service.title}</h3>
+                <p className="text-gray-600 mb-6 text-center">{service.description}</p>
+                
+                {isExpanded && (
+                  <div className="mb-6 bg-green-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-gray-700">
+                          <ChevronRight className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                          <span className="text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
+                <button
+                  onClick={() => setExpandedService(isExpanded ? null : service.id)}
+                  className="w-full inline-flex items-center justify-center text-green-600 hover:text-green-700 font-medium"
+                >
+                  {isExpanded ? 'Show Less' : 'Learn More'}
+                  <ChevronRight className={`w-4 h-4 ml-1 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
+                </button>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
