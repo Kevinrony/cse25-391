@@ -1,1 +1,25 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 
+header {
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+footer {
+    margin-top: 20px;
+}
