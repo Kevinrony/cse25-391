@@ -1,69 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-<const galleryImages = [
-  {
-    id: 1,
-    url: 'https://images.unsplash.com/photo-1770068511771-7c146210a55b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHBhbmVscyUyMGZpZWxkJTIwZ3JlZW4lMjBlbmVyZ3l8ZW58MXx8fHwxNzc1ODExNzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Solar panels in field',
-    title: 'Solar Installation',
-  },
-  {
-    id: 2,
-    url: 'https://images.unsplash.com/photo-1759868412016-8b7da190992a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWN5Y2xpbmclMjBwbGFzdGljJTIwYm90dGxlcyUyMHdhc3RlfGVufDF8fHx8MTc3NTc0MjYxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Recycling materials',
-    title: 'Waste Management',
-  },
-  {
-    id: 3,
-    url: 'https://images.unsplash.com/photo-1656740835412-f0514c91c3e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHBsYW50JTIwc2VlZGxpbmclMjBncm93aW5nJTIwc29pbHxlbnwxfHx8fDE3NzU4MTE3ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Plant growing in soil',
-    title: 'Green Solutions',
-  },
-  {
-    id: 4,
-    url: 'https://images.unsplash.com/photo-1721290174144-fcdc8d0c7487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aW5kJTIwdHVyYmluZXMlMjByZW5ld2FibGUlMjBlbmVyZ3klMjBsYW5kc2NhcGV8ZW58MXx8fHwxNzc1ODEzNTgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Wind turbines',
-    title: 'Renewable Energy',
-  },
-  {
-    id: 5,
-    url: 'https://images.unsplash.com/photo-1632263532338-45575eba6aba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGJ1aWxkaW5nJTIwYXJjaGl0ZWN0dXJlJTIwc3VzdGFpbmFibGV8ZW58MXx8fHwxNzc1ODEzNzU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Green building',
-    title: 'Sustainable Architecture',
-  },
-  {
-    id: 6,
-    url: 'https://images.unsplash.com/photo-1517229581671-6aeb58910de4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kcyUyMGhvbGRpbmclMjBzbWFsbCUyMHRyZWUlMjBzdXN0YWluYWJsZXxlbnwxfHx8fDE3NzU4MTE3ODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Sustainability',
-    title: 'Environmental Care',
-  },
-];
+<body>
 
-export function Gallery() {
-  return (
-    <section id="gallery" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Photo Gallery</h2>
-          <p className="text-gray-600 text-lg">See our eco-friendly solutions in action.</p>
+<div class="container mt-5">
+    <h1>Gallery</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://via.placeholder.com/300" class="img-fluid">
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-          {galleryImages.map((image) => (
-            <div key={image.id} className="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all group">
-              <img
-                src={image.url}
-                alt={image.alt}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div className="p-4 text-white">
-                  <h3 className="font-semibold text-lg">{image.title}</h3>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div class="col-md-4">
+            <img src="https://via.placeholder.com/300" class="img-fluid">
         </div>
-      </div>
-    </section>
-  );
-}
+        <div class="col-md-4">
+            <img src="https://via.placeholder.com/300" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
