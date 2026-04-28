@@ -1,30 +1,24 @@
-/* Custom CSS for GreenCycle Solutions */
+/* Presentation Layer - CSS3  */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    /* Background Image setup to cover the whole page */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('your-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-.navbar-brand {
-    font-weight: bold;
-    color: #28a745 !important; /* Green branding */
-}
-
-/* Page Uniformity Styles */
+/* Ensure the header and main content stand out  */
 header {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    border-bottom: 3px solid #28a745;
+    padding: 60px 0;
+    background: transparent;
 }
 
-footer {
-    background: #343a40;
-    color: white;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-/* Ensure images fit the design matching the wireframe */
-.service-img {
-    border-radius: 8px;
-    margin-bottom: 15px;
+main.container {
+    background: rgba(255, 255, 255, 0.9); /* Slight opacity for readability  */
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
 }
