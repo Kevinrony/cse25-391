@@ -1,352 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EcoWaste Solutions – Cleaner Cities, Greener Future</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
+    <title>EcoSmart Waste Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <span class="brand-icon">♻</span> EcoWaste
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-          <li class="nav-item ms-2"><a class="btn btn-eco" href="schedule.html">Book Pickup</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero-section" id="home">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
-    <div class="container hero-content">
-      <div class="row align-items-center min-vh-100 pt-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <span class="hero-badge">🌱 Sustainable Waste Solutions</span>
-          <h1 class="hero-title">Cleaner Cities.<br><span class="text-eco">Greener</span> Future.</h1>
-          <p class="hero-subtitle">Professional waste collection, recycling & environmental management services. Serving communities with smart, eco-conscious solutions.</p>
-          <div class="hero-buttons">
-            <a href="schedule.html" class="btn btn-eco btn-lg me-3">Schedule Pickup</a>
-            <a href="services.html" class="btn btn-outline-eco btn-lg">Our Services</a>
-          </div>
-          <div class="hero-stats mt-5">
-            <div class="stat-item">
-              <span class="stat-num" id="counter1">0</span><span class="stat-unit">K+</span>
-              <p>Homes Served</p>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num" id="counter2">0</span><span class="stat-unit">T</span>
-              <p>Waste Recycled</p>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num" id="counter3">0</span><span class="stat-unit">%</span>
-              <p>Satisfaction</p>
-            </div>
-          </div>
+        <a class="navbar-brand" href="#">EcoSmart</a>
+        <div>
+            <a class="nav-link d-inline text-white" href="index.html">Home</a>
+            <a class="nav-link d-inline text-white" href="about.html">About</a>
+            <a class="nav-link d-inline text-white" href="services.html">Services</a>
+            <a class="nav-link d-inline text-white" href="gallery.html">Gallery</a>
+            <a class="nav-link d-inline text-white" href="contact.html">Contact</a>
         </div>
-        <div class="col-lg-6 text-center" data-aos="fade-left">
-          <div class="hero-visual">
-            <div class="eco-circle">
-              <div class="eco-inner">
-                <div class="eco-icon-wrap">
-                  <i class="fa-solid fa-recycle eco-main-icon"></i>
-                </div>
-                <p class="eco-tagline">Zero Waste Goal 2030</p>
-              </div>
-            </div>
-            <div class="floating-badge badge-1"><i class="fa fa-leaf"></i> 100% Eco</div>
-            <div class="floating-badge badge-2"><i class="fa fa-truck"></i> On-Time</div>
-            <div class="floating-badge badge-3"><i class="fa fa-shield-halved"></i> Certified</div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</nav>
 
-  <!-- SERVICES SNAPSHOT -->
-  <section class="section-pad bg-light-eco" id="services-snap">
+<!-- HERO -->
+<section class="hero text-center text-white">
     <div class="container">
-      <div class="section-header text-center mb-5">
-        <span class="section-label">What We Do</span>
-        <h2 class="section-title">Our Core Services</h2>
-        <p class="section-sub">From household collections to industrial waste management – we cover it all.</p>
-      </div>
-      <div class="row g-4">
+        <h1>Clean Environment, Better Future</h1>
+        <p>Eco-friendly waste collection and recycling in Botswana</p>
+        <a href="services.html" class="btn btn-light">Explore Services</a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<div class="container mt-5">
+    <h2 class="text-center">Our Services</h2>
+    <div class="row mt-4">
+
         <div class="col-md-4">
-          <div class="service-card">
-            <div class="service-icon-wrap"><i class="fa-solid fa-trash-can"></i></div>
-            <h4>Waste Collection</h4>
-            <p>Scheduled doorstep collection for residential and commercial properties, 7 days a week.</p>
-            <a href="services.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
+            <div class="card p-3 shadow">
+                <h4>Waste Collection</h4>
+                <p>Reliable pickup for homes and businesses.</p>
+            </div>
         </div>
+
         <div class="col-md-4">
-          <div class="service-card featured">
-            <div class="service-icon-wrap"><i class="fa-solid fa-recycle"></i></div>
-            <h4>Recycling Programs</h4>
-            <p>Sorting, processing and recycling paper, plastics, glass and metals with certified partners.</p>
-            <a href="services.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
+            <div class="card p-3 shadow">
+                <h4>Recycling</h4>
+                <p>Reduce waste through eco-friendly recycling.</p>
+            </div>
         </div>
+
         <div class="col-md-4">
-          <div class="service-card">
-            <div class="service-icon-wrap"><i class="fa-solid fa-leaf"></i></div>
-            <h4>Green Waste</h4>
-            <p>Garden waste collection and composting services that turn organic waste into useful compost.</p>
-            <a href="services.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
+            <div class="card p-3 shadow">
+                <h4>Consulting</h4>
+                <p>Advice on managing waste efficiently.</p>
+            </div>
         </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="services.html" class="btn btn-eco">View All Services</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- WASTE SORTING GUIDE -->
-  <section class="section-pad" id="sorting">
-    <div class="container">
-      <div class="section-header text-center mb-5">
-        <span class="section-label">Sort Right</span>
-        <h2 class="section-title">Waste Sorting Guide</h2>
-        <p class="section-sub">Use the right bin every time. Proper sorting saves the environment.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-6 col-md-3">
-          <div class="bin-card green">
-            <div class="bin-top"></div>
-            <div class="bin-body">
-              <i class="fa-solid fa-apple-whole"></i>
-              <h5>Green Bin</h5>
-              <p>Food waste, garden trimmings, organic materials</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="bin-card blue">
-            <div class="bin-top"></div>
-            <div class="bin-body">
-              <i class="fa-solid fa-newspaper"></i>
-              <h5>Blue Bin</h5>
-              <p>Paper, cardboard, magazines, clean packaging</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="bin-card yellow">
-            <div class="bin-top"></div>
-            <div class="bin-body">
-              <i class="fa-solid fa-bottle-water"></i>
-              <h5>Yellow Bin</h5>
-              <p>Plastics, glass bottles, metals and cans</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="bin-card black">
-            <div class="bin-top"></div>
-            <div class="bin-body">
-              <i class="fa-solid fa-trash"></i>
-              <h5>Black Bin</h5>
-              <p>General non-recyclable household waste</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</div>
 
-  <!-- WHY CHOOSE US -->
-  <section class="section-pad why-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-5 mb-4 mb-lg-0">
-          <span class="section-label">Why EcoWaste</span>
-          <h2 class="section-title">Built for a<br>Sustainable Tomorrow</h2>
-          <p>We combine modern technology with environmental responsibility to deliver waste management solutions that are reliable, affordable and planet-friendly.</p>
-          <a href="about.html" class="btn btn-eco mt-3">About Us</a>
-        </div>
-        <div class="col-lg-7">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="why-item">
-                <i class="fa-solid fa-clock"></i>
-                <h6>Punctual Service</h6>
-                <p>Never miss a collection with our reliable schedule system.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="why-item">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <h6>Smart Tracking</h6>
-                <p>Track your waste truck in real time via our online portal.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="why-item">
-                <i class="fa-solid fa-certificate"></i>
-                <h6>ISO Certified</h6>
-                <p>All our processes meet international environmental standards.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="why-item">
-                <i class="fa-solid fa-headset"></i>
-                <h6>24/7 Support</h6>
-                <p>Our support team is available around the clock for queries.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- ABOUT PREVIEW -->
+<div class="container mt-5 text-center">
+    <h2>About EcoSmart</h2>
+    <p>We are dedicated to keeping Botswana clean through modern waste solutions.</p>
+</div>
 
-  <!-- LATEST NEWS TICKER -->
-  <div class="news-ticker">
-    <span class="ticker-label">♻ NEWS</span>
-    <div class="ticker-wrap">
-      <div class="ticker-move">
-        New recycling drop-off centers now open in 3 new areas &nbsp;&nbsp;&nbsp;●&nbsp;&nbsp;&nbsp; 
-        Bulk waste collection available every last Saturday of the month &nbsp;&nbsp;&nbsp;●&nbsp;&nbsp;&nbsp;
-        E-waste drive this April – bring your old electronics &nbsp;&nbsp;&nbsp;●&nbsp;&nbsp;&nbsp;
-        EcoWaste wins 2025 Best Green Company award &nbsp;&nbsp;&nbsp;●&nbsp;&nbsp;&nbsp;
-        Hazardous waste disposal day: 15th of every month &nbsp;&nbsp;&nbsp;●&nbsp;&nbsp;&nbsp;
-      </div>
-    </div>
-  </div>
+<!-- FOOTER -->
+<footer class="bg-success text-white text-center p-3 mt-5">
+    <p>📞 +267 78005842 | 📍 Gaborone, Mandela Rd, Unit 224</p>
+    <p>© 2026 EcoSmart Waste Solutions</p>
+</footer>
 
-  <!-- TESTIMONIALS -->
-  <section class="section-pad testimonials-section">
-    <div class="container">
-      <div class="section-header text-center mb-5">
-        <span class="section-label">Reviews</span>
-        <h2 class="section-title">What Our Clients Say</h2>
-      </div>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>"EcoWaste has transformed our neighborhood. Collections are always on time and the staff are professional and friendly."</p>
-              <div class="client-info">
-                <div class="client-avatar">KM</div>
-                <div>
-                  <strong>Kelebogile Moabi</strong>
-                  <span>Gaborone Resident</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>"Their commercial waste management service has cut our disposal costs by 30%. Highly recommend for any business."</p>
-              <div class="client-info">
-                <div class="client-avatar">TN</div>
-                <div>
-                  <strong>Thabo Nkosi</strong>
-                  <span>Business Owner, Francistown</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="testimonial-card">
-              <div class="stars">★★★★☆</div>
-              <p>"The recycling programs have made it so easy for us to contribute to a cleaner environment. Simple, effective, sustainable."</p>
-              <div class="client-info">
-                <div class="client-avatar">OD</div>
-                <div>
-                  <strong>Onalenna Ditshego</strong>
-                  <span>Community Coordinator</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <h4 class="footer-brand"><span class="brand-icon">♻</span> EcoWaste Solutions</h4>
-          <p>Committed to a cleaner, greener Botswana through responsible waste management and environmental stewardship.</p>
-          <div class="social-links mt-3">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-2 col-6">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-6">
-          <h6>Services</h6>
-          <ul class="footer-links">
-            <li><a href="services.html">Waste Collection</a></li>
-            <li><a href="services.html">Recycling</a></li>
-            <li><a href="services.html">Green Waste</a></li>
-            <li><a href="services.html">Hazardous Waste</a></li>
-            <li><a href="services.html">E-Waste</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <h6>Contact</h6>
-          <ul class="footer-contact">
-            <li><i class="fa fa-map-marker-alt"></i> Plot 123, Main Mall, Gaborone</li>
-            <li><i class="fa fa-phone"></i> +267 123 4567</li>
-            <li><i class="fa fa-envelope"></i> info@ecowaste.co.bw</li>
-            <li><i class="fa fa-clock"></i> Mon–Fri: 7AM – 6PM</li>
-          </ul>
-        </div>
-      </div>
-      <hr class="footer-hr"/>
-      <p class="footer-copy text-center mb-0">© 2026 EcoWaste Solutions. All Rights Reserved. | Designed for a Greener Tomorrow</p>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
-
