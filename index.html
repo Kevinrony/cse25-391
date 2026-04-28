@@ -1,83 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>EcoSmart</title>
     <meta charset="UTF-8">
-
-    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle Solutions | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">EcoSmart</a>
-
-        <div>
-            <a class="nav-link d-inline text-white" href="index.html">Home</a>
-            <a class="nav-link d-inline text-white" href="about.html">About</a>
-            <a class="nav-link d-inline text-white" href="services.html">Services</a>
-            <a class="nav-link d-inline text-white" href="gallery.html">Gallery</a>
-            <a class="nav-link d-inline text-white" href="contact.html">Contact</a>
+        <a class="navbar-brand" href="index.html">GreenCycle Solutions</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="recycling.html">Recycling Guide</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+            </ul>
         </div>
     </div>
 </nav>
 
-<!-- HERO SECTION -->
-<section style="background-image: url('Saahas Zero Waste offers professional waste…'); 
-                background-size: cover; 
-                background-position: center; 
-                height: 400px; 
-                color: white; 
-                display: flex; 
-                align-items: center; 
-                justify-content: center;">
-
-    <div class="text-center">
-        <h1>Clean Environment, Better Future</h1>
-        <p>Eco-friendly waste collection in Botswana</p>
-        <a href="services.html" class="btn btn-light">Explore Services</a>
+<header class="text-center">
+    <div class="container">
+        <h1>Managing Today for a Greener Tomorrow</h1>
+        <p>Your local partner in sustainable waste management.</p>
     </div>
+</header>
 
-</section>
-
-<!-- SERVICES PREVIEW -->
-<div class="container mt-5">
-    <div class="row">
-
-        <div class="col-md-4">
-            <div class="card p-3">
-                <h3>Waste Collection</h3>
-                <p>Reliable and fast waste pickup services.</p>
-            </div>
+<main class="container mt-5">
+    <section class="row">
+        <div class="col-md-6">
+            <h2>Our Mission</h2>
+            <p>At GreenCycle, we aim to reduce landfill waste by 40% by 2030 through innovative recycling technologies.</p>
         </div>
-
-        <div class="col-md-4">
-            <div class="card p-3">
-                <h3>Recycling</h3>
-                <p>We help reduce waste through recycling.</p>
-            </div>
+        <div class="col-md-6">
+            <img src="waste-management.jpg" alt="Recycling bins lined up" width="500" height="300" class="img-fluid service-img">
         </div>
+    </section>
+</main>
 
-        <div class="col-md-4">
-            <div class="card p-3">
-                <h3>Industrial Waste</h3>
-                <p>Safe handling of industrial waste.</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- FOOTER -->
-<footer class="bg-success text-white text-center mt-5 p-3">
-    <p>© 2026 EcoSmart</p>
+<footer class="text-center">
+    <p>&copy; 2026 GreenCycle Solutions. All Rights Reserved.</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
