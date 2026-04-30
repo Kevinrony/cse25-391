@@ -8,6 +8,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -100,6 +103,61 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+    
+    <section class="stats text-center text-white">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+                <h2>500+</h2>
+                <p>Clients Served</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>1200+</h2>
+                <p>Tons Recycled</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>50+</h2>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>10+</h2>
+                <p>Years Experience</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section class="container my-5">
+    <h2 class="text-center mb-4">What Our Clients Say</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow reveal">
+                <p>"Excellent service and very reliable!"</p>
+                <h6>- Local Business Owner</h6>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow reveal">
+                <p>"Helped us keep our environment clean."</p>
+                <h6>- Community Leader</h6>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow reveal">
+                <p>"Highly recommend GreenCycle."</p>
+                <h6>- Resident</h6>
+            </div>
+        </div>
 
     </div>
 </section>
@@ -110,4 +168,20 @@
 </footer>
 
 </body>
+    <script>
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            reveals[i].classList.add("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
 </html>
