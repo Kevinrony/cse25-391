@@ -1,27 +1,52 @@
+/* GENERAL */
 body {
     font-family: Arial;
-    margin: 0;
 }
 
-header {
-    background: green;
-    color: white;
-    padding: 15px;
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+    background-size: cover;
+    background-position: center;
 }
 
-nav a {
-    margin: 10px;
-    color: white;
-    text-decoration: none;
+/* ANIMATIONS */
+.fade-in {
+    animation: fadeIn 2s ease-in;
 }
 
-section {
-    padding: 20px;
+.delay {
+    animation-delay: 1s;
 }
 
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BUTTON ANIMATION */
+.btn-animate {
+    transition: transform 0.3s;
+}
+
+.btn-animate:hover {
+    transform: scale(1.1);
+}
+
+/* SERVICE CARDS */
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
