@@ -50,3 +50,20 @@ body {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
+/* STATS SECTION */
+.stats {
+    background: green;
+    padding: 50px 0;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
