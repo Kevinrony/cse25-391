@@ -67,3 +67,7 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+input:focus, textarea:focus {
+    border: 2px solid green;
+    box-shadow: 0 0 5px green;
+}
