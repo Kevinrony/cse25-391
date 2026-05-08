@@ -2,21 +2,6 @@
 body {
     font-family: Arial;
 }
-/* LOGO */
-.logo-img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
-}
-.logo-img{
-    width:60px;
-    height:60px;
-}
-/* NAVBAR BRAND */
-.navbar-brand{
-    font-size:1.4rem;
-    letter-spacing:1px;
-}
 /* HERO SECTION */
 .hero {
     height: 90vh;
@@ -122,4 +107,30 @@ input:focus, textarea:focus {
         height:140px;
     }
 
+}
+/* LOGO */
+.logo-img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+/* NAVBAR */
+.navbar{
+    padding:12px 0;
+}
+
+.nav-link{
+    margin-left:15px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#198754 !important;
+}
+
+/* BRAND */
+.navbar-brand{
+    font-size:1.4rem;
+    letter-spacing:1px;
 }
