@@ -1,43 +1,37 @@
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+<!-- JS VALIDATION -->
+<script>
 
-    e.preventDefault(); // stop form from submitting
+document.getElementById("contactForm")
+.addEventListener("submit", function(e){
 
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let message = document.getElementById("message").value.trim();
+    e.preventDefault();
 
-    let valid = true;
+    let name =
+    document.getElementById("name").value;
 
-    // Clear errors
-    document.getElementById("nameError").innerText = "";
-    document.getElementById("emailError").innerText = "";
-    document.getElementById("messageError").innerText = "";
+    let email =
+    document.getElementById("email").value;
 
-    // Name validation
-    if (name === "") {
-        document.getElementById("nameError").innerText = "Name is required";
-        valid = false;
-    }
+    let subject =
+    document.getElementById("subject").value;
 
-    // Email validation
-    if (email === "") {
-        document.getElementById("emailError").innerText = "Email is required";
-        valid = false;
-    } else if (!email.includes("@")) {
-        document.getElementById("emailError").innerText = "Enter a valid email";
-        valid = false;
-    }
+    let message =
+    document.getElementById("message").value;
 
-    // Message validation
-    if (message === "") {
-        document.getElementById("messageError").innerText = "Message is required";
-        valid = false;
-    }
+    if(name==="" || email==="" ||
+       subject==="" || message===""){
 
-    // If valid
-    if (valid) {
+        alert("Please fill in all fields.");
+
+    }else{
+
         alert("Message sent successfully!");
+
         document.getElementById("contactForm").reset();
+
     }
 
 });
+
+</script>
+
