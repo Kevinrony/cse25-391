@@ -2,7 +2,21 @@
 body {
     font-family: Arial;
 }
-
+/* LOGO */
+.logo-img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+}
+.logo-img{
+    width:60px;
+    height:60px;
+}
+/* NAVBAR BRAND */
+.navbar-brand{
+    font-size:1.4rem;
+    letter-spacing:1px;
+}
 /* HERO SECTION */
 .hero {
     height: 90vh;
