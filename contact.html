@@ -1,37 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact - GreenCycle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - GreenCycle</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:
+            linear-gradient(135deg,#0f172a,#198754);
+            font-family:Arial,sans-serif;
+            padding:40px 20px;
+        }
+
+        /* CONTACT CONTAINER */
+        .contact-container{
+            background:white;
+            width:100%;
+            max-width:1100px;
+            border-radius:25px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* LEFT SIDE */
+        .contact-left{
+            background:#f8f9fa;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            padding:50px;
+            height:100%;
+        }
+
+        .contact-left i{
+            font-size:120px;
+            color:#198754;
+            margin-bottom:20px;
+        }
+
+        .contact-left h2{
+            font-weight:bold;
+            color:#198754;
+        }
+
+        .contact-left p{
+            text-align:center;
+            color:#555;
+            margin-top:10px;
+        }
+
+        /* RIGHT SIDE */
+        .contact-right{
+            padding:60px 50px;
+        }
+
+        .contact-right h2{
+            font-weight:bold;
+            margin-bottom:30px;
+            color:#111;
+        }
+
+        /* INPUTS */
+        .form-control{
+            border:none;
+            background:#f1f1f1;
+            padding:18px;
+            border-radius:50px;
+            margin-bottom:20px;
+            box-shadow:none !important;
+        }
+
+        textarea.form-control{
+            border-radius:20px;
+            resize:none;
+        }
+
+        /* BUTTON */
+        .btn-green{
+            background:#198754;
+            color:white;
+            border:none;
+            padding:14px 35px;
+            border-radius:50px;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .btn-green:hover{
+            background:#146c43;
+            transform:translateY(-3px);
+        }
+
+        /* SOCIAL ICONS */
+        .social-icons{
+            margin-top:25px;
+        }
+
+        .social-icons i{
+            width:45px;
+            height:45px;
+            background:#198754;
+            color:white;
+            border-radius:50%;
+            display:inline-flex;
+            justify-content:center;
+            align-items:center;
+            margin-right:10px;
+            transition:0.3s;
+            cursor:pointer;
+        }
+
+        .social-icons i:hover{
+            background:#14532d;
+            transform:scale(1.1);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+
+            .contact-left{
+                padding:40px 20px;
+            }
+
+            .contact-right{
+                padding:40px 25px;
+            }
+
+            .contact-left i{
+                font-size:80px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
 
-<div class="container my-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
+<div class="contact-container">
 
-    <form id="contactForm">
+    <div class="row g-0">
 
-        <input type="text" id="name" class="form-control mb-3" placeholder="Your Name">
-        <small id="nameError" class="text-danger"></small>
+        <!-- LEFT -->
+        <div class="col-md-5">
 
-        <input type="email" id="email" class="form-control mb-3" placeholder="Your Email">
-        <small id="emailError" class="text-danger"></small>
+            <div class="contact-left">
 
-        <textarea id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
-        <small id="messageError" class="text-danger"></small>
+                <i class="fas fa-envelope-open-text"></i>
 
-        <button class="btn btn-success">Send Message</button>
+                <h2>Let's Talk</h2>
 
-    </form>
+                <p>
+                    Contact GreenCycle for recycling,
+                    waste management and eco-friendly solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col-md-7">
+
+            <div class="contact-right">
+
+                <h2>Get In Touch</h2>
+
+                <!-- FORM -->
+                <form id="contactForm">
+
+                    <input type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                    id="name">
+
+                    <input type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                    id="email">
+
+                    <input type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                    id="subject">
+
+                    <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Write your message..."
+                    id="message"></textarea>
+
+                    <button type="submit"
+                    class="btn btn-green">
+
+                        Send Message
+                        <i class="fas fa-arrow-right ms-2"></i>
+
+                    </button>
+
+                </form>
+
+                <!-- SOCIALS -->
+                <div class="social-icons">
+
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<script src="script.js"></script>
+<!-- JS VALIDATION -->
+<script>
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name =
+    document.getElementById("name").value;
+
+    let email =
+    document.getElementById("email").value;
+
+    let subject =
+    document.getElementById("subject").value;
+
+    let message =
+    document.getElementById("message").value;
+
+    if(name==="" || email==="" ||
+       subject==="" || message===""){
+
+        alert("Please fill in all fields.");
+
+    }else{
+
+        alert("Message sent successfully!");
+
+        document.getElementById("contactForm").reset();
+
+    }
+
+});
+
+</script>
 
 </body>
 </html>
