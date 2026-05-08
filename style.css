@@ -81,9 +81,9 @@ input:focus, textarea:focus {
     background-position: center;
     padding: 120px 0;
 }
-/* CAROUSEL IMAGE */
+/* SLIDESHOW IMAGES */
 .carousel-img{
-    height:400px;
+    height:300px;
     object-fit:cover;
     border-radius:10px;
 }
@@ -91,21 +91,21 @@ input:focus, textarea:focus {
 /* GALLERY IMAGES */
 .gallery-box img{
     width:100%;
-    height:220px;
+    height:170px;
     object-fit:cover;
     transition:0.5s;
+    border-radius:12px;
 }
 
 /* MOBILE RESPONSIVE */
 @media(max-width:768px){
 
     .carousel-img{
-        height:250px;
+        height:200px;
     }
 
     .gallery-box img{
-        height:180px;
+        height:140px;
     }
 
-}
 }
