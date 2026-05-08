@@ -13,7 +13,147 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:
+            linear-gradient(135deg,#0f172a,#198754);
+            font-family:Arial,sans-serif;
+            padding:40px 20px;
+        }
+
+        /* CONTACT CONTAINER */
+        .contact-container{
+            background:white;
+            width:100%;
+            max-width:1100px;
+            border-radius:25px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* LEFT SIDE */
+        .contact-left{
+            background:#f8f9fa;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            padding:50px;
+            height:100%;
+        }
+
+        .contact-left i{
+            font-size:120px;
+            color:#198754;
+            margin-bottom:20px;
+        }
+
+        .contact-left h2{
+            font-weight:bold;
+            color:#198754;
+        }
+
+        .contact-left p{
+            text-align:center;
+            color:#555;
+            margin-top:10px;
+        }
+
+        /* RIGHT SIDE */
+        .contact-right{
+            padding:60px 50px;
+        }
+
+        .contact-right h2{
+            font-weight:bold;
+            margin-bottom:30px;
+            color:#111;
+        }
+
+        /* INPUTS */
+        .form-control{
+            border:none;
+            background:#f1f1f1;
+            padding:18px;
+            border-radius:50px;
+            margin-bottom:20px;
+            box-shadow:none !important;
+        }
+
+        textarea.form-control{
+            border-radius:20px;
+            resize:none;
+        }
+
+        /* BUTTON */
+        .btn-green{
+            background:#198754;
+            color:white;
+            border:none;
+            padding:14px 35px;
+            border-radius:50px;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .btn-green:hover{
+            background:#146c43;
+            transform:translateY(-3px);
+        }
+
+        /* SOCIAL ICONS */
+        .social-icons{
+            margin-top:25px;
+        }
+
+        .social-icons i{
+            width:45px;
+            height:45px;
+            background:#198754;
+            color:white;
+            border-radius:50%;
+            display:inline-flex;
+            justify-content:center;
+            align-items:center;
+            margin-right:10px;
+            transition:0.3s;
+            cursor:pointer;
+        }
+
+        .social-icons i:hover{
+            background:#14532d;
+            transform:scale(1.1);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+
+            .contact-left{
+                padding:40px 20px;
+            }
+
+            .contact-right{
+                padding:40px 25px;
+            }
+
+            .contact-left i{
+                font-size:80px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
@@ -99,6 +239,42 @@
 
 </div>
 
+<!-- JS VALIDATION -->
+<script>
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name =
+    document.getElementById("name").value;
+
+    let email =
+    document.getElementById("email").value;
+
+    let subject =
+    document.getElementById("subject").value;
+
+    let message =
+    document.getElementById("message").value;
+
+    if(name==="" || email==="" ||
+       subject==="" || message===""){
+
+        alert("Please fill in all fields.");
+
+    }else{
+
+        alert("Message sent successfully!");
+
+        document.getElementById("contactForm").reset();
+
+    }
+
+});
+
+</script>
 
 </body>
 </html>
