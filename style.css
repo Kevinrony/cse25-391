@@ -80,12 +80,6 @@ input:focus, textarea:focus {
     background-position: center;
     padding: 120px 0;
 }
-/* SLIDESHOW IMAGES */
-.carousel-img{
-    height:300px;
-    object-fit:cover;
-    border-radius:10px;
-}
 
 /* GALLERY IMAGES */
 .gallery-box img{
